@@ -42,9 +42,42 @@ Cada classe ou interface desempenha um papel específico no sistema e contribui 
 
 3 - Abaixo o diagrana de clases para melhor entendimento da funcionalidade:
 
-<p>
-  <img src="docs/iPhone-uml.png" alt="Resultado do Sistema"/><br>
-</p>
+```mermaid
+    classDiagram
+      class iPhone {
+        tocar()
+        pausar()
+        selecionarMusica()
+        ligar()
+        atender()
+        iniciarCorreioVoz()
+        exibirPagina()
+        adicionarNovaAba()
+        atualizarPagina()
+      }
+    
+      class ReprodutorMusical {
+        tocar()
+        pausar()
+        selecionarMusica()
+      }
+    
+      class AparelhoTelefonico {
+        ligar()
+        atender()
+        iniciarCorreioVoz()
+      }
+    
+      class NavegadorInternet {
+        exibirPagina()
+        adicionarNovaAba()
+        atualizarPagina()
+      }
+    
+      iPhone --|> ReprodutorMusical
+      iPhone --|> AparelhoTelefonico
+      iPhone --|> NavegadorInternet
+```
 
 ## Colaboradores
 Bruna Stefani Moreira Torres Francisco <a href="https://www.linkedin.com/in/bruna-moreira-torres-francisco/" target="_blank">LinkedIn</a>
